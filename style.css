@@ -90,3 +90,8 @@ button {
            0 0 2.5em 2em var(--glow-spread-color),
            inset 0 0 .5em .25em var(--glow-color);
    }
+
+   .conatiner .img{
+          height: 70vh;
+          width: auto;
+   }
