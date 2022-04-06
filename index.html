@@ -1,33 +1,52 @@
-<!doctype html>
+
+
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <title>Dinesh Timalsin</title>
-  </head>
-  <body>
-
-  
+<head>
+	<title>jQuery Mousemove Effects</title>
+  <link href="./style.css" rel="stylesheet">
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+  crossorigin="anonymous"
+/>
+</head>
+<body>
+	<section>
     <div class="container" style="height: 100vh;">
-        <h1 style="text-align: center; align-items: center; align-self: center; padding: 30%;"> धेरै काम बाकीं छ !<br> <span style="margin-top: 15%; color: red;">हामी त हेरेको हेरै </span>😁</h1>
-        <p style="align-items: center; align-self: center; text-align: center;"><a href="https://www.facebook.com/dinesh.sarkar.4612" target="_blank" style="text-decoration: none;">Dinesh Timalsina</a></p>
+
+   
+		<div class="light"></div>
+    <div class="row">
+      <div class="col-12 center" >
+        <h2 style="text-align: center;">Dinesh Timalsina</h2>
+            <button > Hover Me
+            </button>
+      </div>
     </div>
 
+		<img src="https://scontent.fktm7-1.fna.fbcdn.net/v/t1.6435-9/67392547_915064265559359_6507650132396212224_n.jpg?_nc_cat=108&ccb=1-5&_nc_sid=174925&_nc_ohc=aeC8m7sNf5QAX-aflSK&_nc_ht=scontent.fktm7-1.fna&oh=00_AT9OyR-1Dd3Yj4Ke4i7GBt9Qczd6F04gRbX3DuI8ypBT0w&oe=62749A9B">
+  
+  </div>
+  </section>
+	<script
+	src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+	integrity="sha256-pasqAKBDmFT4eHoN2ndd6lN370kFiGUFyTiUHWhU7k8="
+	crossorigin="anonymous"></script>
 
-    <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-    -->
-  </body>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
+</body>
+<script>
+  $(document).mousemove(function(e){
+			var X = e.pageX;
+			var Y = e.pageY;
+			$('.light').css('background','radial-gradient(circle at '+X+'px '+Y+'px, transparent, #000 30% )');
+		});
+</script>
 </html>
